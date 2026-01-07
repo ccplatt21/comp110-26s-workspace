@@ -7,7 +7,7 @@ This file contains configuration settings for your VSCode Development Container.
 It ensures everyone's VSCode is setup properly for success in the course.
 */
 {
-    "name": "comp110-25f",
+    "name": "comp110-26s",
     "image": "krisjordan/trailhead:0.2.1",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
@@ -42,6 +42,11 @@ It ensures everyone's VSCode is setup properly for success in the course.
                     "reportDeprecated": "error",
                     "reportImportCycles": "error"
                 },
+                "github.copilot.enable": {
+                "*": false
+                },
+                "github.copilot.editor.enableAutoCompletions": false,
+                "github.copilot.inlineSuggest.enable": false,
                 "files.exclude": {
                     "**/.git": true,
                     "**/.svn": true,
@@ -63,6 +68,6 @@ It ensures everyone's VSCode is setup properly for success in the course.
     },
     "runArgs": [
         "--name",
-        "comp110-25f"
+        "comp110-26s"
     ]
 }
