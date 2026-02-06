@@ -10,7 +10,7 @@ def input_word() -> str:
     # now make sure the word is 5 letters exactly and if not, let the user know
     if len(word) != 5:
         print(
-            "Error: Word must contain 5 characters"
+            "Error: Word must contain 5 characters."
         )  # print the error for anything other than 5 length
         exit()  # this exits if the user hits the error
     return word  # return the word no matter the length
