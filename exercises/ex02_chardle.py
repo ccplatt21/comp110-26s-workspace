@@ -56,7 +56,7 @@ def contains_char(word: str, letter: str) -> None:
         print(f"{letter} found at index 4")
         count = count + 1
 
-    # now we need to add if/else statements to print the count variables aka how many matches
+    # now we need to add if/else statements
     if count == 0:
         print(f"No instances of {letter} found in {word}")
     elif count == 1:

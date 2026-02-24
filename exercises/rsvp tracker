@@ -1,0 +1,16 @@
+"""Coding an rsvp tracker"""
+
+rsvp_list: list[str] = ["Enrico", "Yun"]
+
+
+def add_rsvp(friend: str) -> None:
+    """Change the list by appending a friend"""
+    rsvp_list.append(friend)
+
+
+def has_rsvped(friend: str) -> bool:
+    """Return True if the friends name is in the rsvp list"""
+    i: int = 0  # representing current index in the list
+    while i < len(rsvp_list):
+        # do something here
+        i += 1

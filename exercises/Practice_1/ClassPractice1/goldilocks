@@ -1,0 +1,17 @@
+def shipping_cost(weight: float, has_label: bool, international: bool) -> float:
+    """Determines cost to ship a package"""
+    cost: float
+    if not has_label:
+        cost = 0.0
+    else:
+        if weight <= 1:
+            cost = 5.0
+        elif weight > 1 and weight <= 5:
+            cost = 10.0
+        else:
+            cost = 20.0
+
+    if international:
+        cost = cost + 10
+
+    return cost
