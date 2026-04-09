@@ -37,10 +37,10 @@ class Line:
 
     def __str__(self) -> str:
         """Provide the start and end points of Line"""
-        return f"Line that starts at {self.start} and ends at {self.end}"
+        return f"Line from {self.start} to {self.end}"
 
     def __repr__(self) -> str:
-        return f"Line({self.start}, {self.end})"
+        return f"Line({repr(self.start)}, {repr(self.end)})"
 
     def get_length(self) -> float:
         return (
